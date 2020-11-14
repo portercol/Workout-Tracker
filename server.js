@@ -15,8 +15,8 @@ app.use(express.json());
 // Serve static content for the app
 app.use(express.static("public"));
 
-// // routes
-// app.use(require("./public/api.js"));
+// routes
+app.use(require("./routes/html.js"));
 
 // Create server listener on PORT #
 app.listen(PORT, () => {
