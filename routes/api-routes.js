@@ -2,7 +2,7 @@ const db = require("../models/workout");
 
 module.exports = function (app) {
 
-    //get all workouts
+    // Get all workouts
     app.get("/api/workouts", (req, res) => {
         // console.log(res);
         db.Workout.find({}).then(dbWorkout => {
@@ -19,7 +19,7 @@ module.exports = function (app) {
         });
     });
 
-    // continue exercise
+    // Continue exercise
     app.put("/api/workouts/:id", (req, res) => {
 
         // Find workout using ID and update it
@@ -34,5 +34,14 @@ module.exports = function (app) {
             }).catch(err => {
                 res.json(err);
             });
+    });
+
+    // Create new workout
+    app.post("/api/workouts", ({ body }, res) => {
+        db.Workout.create(body).then((dbWorkout => {
+            res.json(dbWorkout);
+        })).catch(err => {
+            res.json(err);
+        });
     });
 };
