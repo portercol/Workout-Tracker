@@ -1,18 +1,12 @@
-const db = require("../models/workout");
+const db = require("../models");
 
 module.exports = function (app) {
 
     // Get all workouts
     app.get("/api/workouts", (req, res) => {
         // console.log(res);
+        console.log("are we here yet?");
         db.Workout.find({}).then(dbWorkout => {
-            dbWorkout.forEach(workout => {
-                var total = 0;
-                workout.exercise.forEach(e => {
-                    total += e.duration;
-                });
-                workout.totalDuration = total;
-            });
             res.json(dbWorkout);
         }).catch(err => {
             res.json(err);
@@ -38,10 +32,13 @@ module.exports = function (app) {
 
     // Create new workout
     app.post("/api/workouts", ({ body }, res) => {
+        console.log(body);
         db.Workout.create(body).then((dbWorkout => {
             res.json(dbWorkout);
         })).catch(err => {
             res.json(err);
         });
     });
+
+    
 };
