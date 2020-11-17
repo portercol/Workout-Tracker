@@ -1,11 +1,14 @@
+// Require mongoose package and model folder with Workout model within
 let mongoose = require("mongoose");
 let db = require("../models");
 
+// Connect to mongodb
 mongoose.connect("mongodb://localhost/workout", {
   useNewUrlParser: true,
   useFindAndModify: false
 });
 
+// Create an array of workouts
 let workoutSeed = [
   {
     day: new Date().setDate(new Date().getDate()-10),
@@ -124,6 +127,7 @@ let workoutSeed = [
   }
 ];
 
+// This process notifies the user how many records were inserted into the db
 db.Workout.deleteMany({})
   .then(() => db.Workout.collection.insertMany(workoutSeed))
   .then(data => {
