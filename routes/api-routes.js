@@ -1,4 +1,4 @@
-// Require in the model folder with the Workout model within
+// Require in the model folder with the Workout model
 const db = require("../models");
 
 module.exports = function (app) {
