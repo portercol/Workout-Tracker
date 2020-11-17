@@ -15,6 +15,14 @@ An fitness-tracker app where the user can create and track daily workouts while 
 5. View 'dashboard' to see stats of the workouts in progress completed
 
 ## App images
+1. Home Page
+![Workout Tracker](public/images/fitnessTrackerHome.png)
+2. Selecting a Resistance Exercise
+![Workout Tracker](public/images/resistance.png)
+3. Selecting a Cardio Exercise
+![Workout Tracker](public/images/cardio.png)
+4. Dashboard/Stats Page
+![Workout Tracker](public/images/stats.png)
 
 ## Credits/Technologies
 1. HTML
