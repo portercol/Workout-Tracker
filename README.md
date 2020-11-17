@@ -22,7 +22,7 @@ An fitness-tracker app where the user can create and track daily workouts while 
 3. Selecting a Cardio Exercise
 ![Workout Tracker](public/images/cardio.png)
 4. Dashboard/Stats Page
-![Workout Tracker](public/images/stats.png)
+![Workout Tracker](public/images/dashboard.png)
 
 ## Credits/Technologies
 1. HTML
