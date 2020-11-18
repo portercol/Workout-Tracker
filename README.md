@@ -12,7 +12,7 @@ An fitness-tracker app where the user can create and track daily workouts while 
 2. Choose between 'resistance' or 'cardio'
 3. Select the parameters of the workout-type
 4. Select 'add exercise' to add to the existing workout or select 'complete' to complete the workout
-5. View 'dashboard' to see stats of the workouts in progress completed
+5. View 'dashboard' to see the stats of the workouts in progress and/or completed
 
 ## App images
 1. Home Page
