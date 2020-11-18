@@ -3,7 +3,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const path = require('path');
 const logger = require('morgan');
-require('dotenv/config');
+require('dotenv').config();
 
 // Set up PORT to run on whatever is available OR 3000
 const PORT = process.env.PORT || 3000

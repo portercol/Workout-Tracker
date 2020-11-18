@@ -1,7 +1,7 @@
 // Require mongoose package and model folder with Workout model within
 let mongoose = require("mongoose");
 let db = require("../models");
-require('dotenv/config');
+require('dotenv').config();
 
 // Connect to mongodb
 mongoose.connect(
