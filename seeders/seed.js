@@ -1,10 +1,11 @@
 // Require mongoose package and model folder with Workout model within
 let mongoose = require("mongoose");
 let db = require("../models");
+require('dotenv/config');
 
 // Connect to mongodb
 mongoose.connect(
-  process.env.MONGODB_URI || 'mongodb://localhost/workout',
+  process.env.MONGODB_URI,
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
