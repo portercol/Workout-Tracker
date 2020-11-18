@@ -3,6 +3,8 @@ const express = require('express');
 const mongoose = require('mongoose');
 const path = require('path');
 const logger = require('morgan');
+
+// Require in the 'dotenv' package to use the environment variable
 require('dotenv').config();
 
 // Set up PORT to run on whatever is available OR 3000
